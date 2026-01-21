@@ -16,4 +16,5 @@ Sito portfolio personale realizzato per il progetto Start2Impact.
 - CV
 - Contattami
 
-🔗 Demo online: https://TUOUSERNAME.github.io/NOME-REPO/
+🔗 GitHub: https://alessandratrapasso095.github.io/portfolio-alessandra-trapasso/
+
