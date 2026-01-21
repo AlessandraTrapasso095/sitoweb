@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="it">
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alessandra Trapasso | Junior Web Developer</title>
+    <meta
+      name="description"
+      content="Sito personale di Alessandra Trapasso, Junior Web Developer: competenze, CV e contatti."
+    />
+
+    <meta property="og:title" content="Alessandra Trapasso | Junior Web Developer"/> <!-- Open Graph per social -->
+    <meta property="og:description" content="Portfolio personale: competenze, CV e contatti." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:image" content="assets/img/og-cover.jpg"/> <!-- Immagine copertina -->
+
+    <link rel="icon" href="assets/icons/favicon.ico" /> <!-- Favicon -->
+
+    <link
+       rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+      /> <!-- Icone -->
+
+    <link  
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+    /> <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="css/style.css" /> <!-- CSS (con SCSS) -->
+  </head>
+   
+  <!-- BODY -->
+ <body id="home">
+   <!-- HEADER -->
+   <header class="site-header" aria-label="Header principale">
+     <!-- NAV -->
+     <nav class="hero-nav" aria-label="Menu principale"> 
+       <a href="index.html" class="brand" aria-label="Vai alla Home"> <!-- logo -->
+         <img src="assets/img/logo2.png" alt="Logo AT" class="brand__logo" />
+       </a>
+
+       <ul class="social-links" aria-label="Social links"> <!-- Link Social -->
+         <li>
+           <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+             <i class="fa-brands fa-github"></i> <!-- "fa-brands" riferito ad Awesome Font-->
+             <span>GitHub</span>
+            </a>
+         </li>
+
+         <li>
+           <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+             <i class="fa-brands fa-linkedin-in"></i> <!-- "fa-brands" riferito ad Awesome Font-->
+             <span>LinkedIn</span>
+           </a>
+         </li>
+
+         <li>
+           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+             <i class="fa-brands fa-instagram"></i> <!-- "fa-brands" riferito ad Awesome Font-->
+             <span>Instagram</span>
+           </a>
+         </li>
+       </ul>
+
+       <div class="menu-bar"> <!-- barra menu desktop -->
+         <ul class="nav-menu">
+           <li><a href="#home">Home</a></li>
+           <li><a href="chisono.html" target="_blank" rel="noopener noreferrer">Chi Sono</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#progetti">Progetti</a></li>
+           <li><a href="cv.html" target="_blank" rel="noopener noreferrer">CV</a></li>
+           <li><a href="contattami.html" target="_blank" rel="noopener noreferrer">Contattami</a></li>
+         </ul>
+
+         <form class="nav-search nav-search--desktop" role="search"> <!-- barra di ricerca finta senza JS-->
+           <input type="search" placeholder="Cerca..." />
+         </form>
+       </div>
+
+       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true"/>  <!-- checkbox per menu Hamburger -->
+         <label for="nav-toggle" class="nav-hamburger" aria-label="Apri o chiudi il menu">
+           <span></span> <!-- per creare le tre linee -->
+           <span></span>
+           <span></span>
+          </label>
+
+         <label for="nav-toggle" class="nav-overlay" aria-hidden="true"></label>
+         <aside class="nav-drawer" aria-label="Menu mobile"> <!-- Menu mobile a destra -->
+           <div class="nav-drawer__top">
+              <span class="nav-drawer__title">Menu</span>
+              <label for="nav-toggle" class="nav-drawer__close" aria-label="Chiudi menu">×</label> <!-- Crea la X -->
+            </div>
+
+            <ul class="nav-drawer__menu"> <!-- Menu mobile -->
+              <li><a href="#home">Home</a></li>
+              <li><a href="chisono.html" target="_blank" rel="noopener noreferrer">Chi Sono</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#progetti">Progetti</a></li>
+              <li><a href="cv.html" target="_blank" rel="noopener noreferrer">CV</a></li>
+              <li><a href="contattami.html" target="_blank" rel="noopener noreferrer">Contattami</a></li>
+            </ul>
+
+            <form class="nav-drawer__search" role="search"> <!-- Senza JS, barra ricerca menu mobile -->
+             <input type="search" placeholder="Cerca..." />
+            </form>
+         </aside>
+     </nav>
+   </header>
+
+    <!-- MAIN -->
+    <main>
+     <div class="hero-content container-fluid"> <!-- piccola introduzione di me -->
+     <div class="row align-items-center hero-row">
+       <div class="col-12 col-lg-7"> <!-- bootstrap -->
+         <div class="hero-text">
+             <h1 class="hero-title">
+             Ciao! 👋 Sono <br> Alessandra Trapasso
+           </h1>
+
+           <p class="hero-subtitle">
+             studio web development e costruisco progetti pratici, un passo alla volta.
+             Sto seguendo un percorso di formazione come Full Stack Web Developer, con particolare attenzione a HTML, CSS e layout responsive.
+                  <br> <strong>Se cerchi una figura junior motivata, scrivimi: rispondo volentieri.</strong> 
+           </p>
+
+           <a class="hero-cta" href="contattami.html" target="_blank" rel="noopener noreferrer">
+             Contattami <!-- bottone -->
+           </a>
+         </div>
+        </div>
+
+       <div class="col-12 col-lg-5"> <!-- bootstrap -->
+         <div class="hero-photo-wrap"> <!-- foto profilo -->
+           <img
+             src="assets/img/immagine_copertina_profilo.png"
+             alt="Foto profilo Alessandra Trapasso"
+             class="hero-photo"
+            />
+         </div>
+       </div>
+     </div>
+     </div>
+
+     <section id="chi-sono" class="why-me" aria-label="Perché scegliere me">
+      <div class="why-me__inner">
+        <div class="why-me__card">
+          <h2 class="why-me__title">Perché scegliere me?</h2>
+
+           <p class="why-me__text">
+           Sono una Junior Web Developer in formazione, con grande attenzione a layout puliti,
+           responsive e usabilità. Lavoro con cura, passo dopo passo, per trasformare idee in pagine
+           chiare e professionali.
+          </p>
+
+         <div class="why-me__grid">
+            <div class="why-me__item">
+             <h3>Ordine e chiarezza</h3>
+               <p>Struttura pulita, semantica, facile da mantenere.</p>
+            </div>
+
+           <div class="why-me__item">
+             <h3>Responsive vero</h3>
+               <p>Layout adattato bene a mobile, tablet e desktop.</p>
+            </div>
+
+           <div class="why-me__item">
+             <h3>Attenzione ai dettagli</h3>
+               <p>Spaziature, leggibilità e coerenza visiva.</p>
+            </div>
+         </div>
+      </div>
+      </div>
+     </section>
+
+     <section class="process" aria-label="Come lavoro per te">
+     <div class="process__inner">
+       <h2 class="process__title">Come lavoro per te</h2>
+         <p class="process__subtitle">
+         Un processo semplice e chiaro: ti aggiorno passo dopo passo e trasformo l’idea in una pagina pulita,
+         responsive e pronta da pubblicare.
+         </p>
+
+       <div class="process__grid">
+         <article class="process-card">
+           <div class="process-card__num">01</div>
+             <h3 class="process-card__title">Analisi</h3>
+             <p class="process-card__text">
+             Ascolto i tuoi obiettivi e le tue idee. Definiamo insieme cosa serve davvero e come strutturarlo al meglio.
+           </p>
+         </article>
+
+         <article class="process-card">
+           <div class="process-card__num">02</div>
+             <h3 class="process-card__title">Progettazione</h3>
+               <p class="process-card__text">
+               Organizzo i contenuti e creo un layout coerente. Scelgo spaziature, gerarchie e componenti per un design solido.
+               </p>
+           </article>
+
+         <article class="process-card">
+           <div class="process-card__num">03</div>
+             <h3 class="process-card__title">Sviluppo</h3>
+               <p class="process-card__text">
+               Trasformo il design in codice: HTML semantico, CSS pulito, layout responsive e attenzione ai dettagli.
+               </p>
+           </article>
+
+         <article class="process-card">
+           <div class="process-card__num">04</div>
+             <h3 class="process-card__title">Lancio</h3>
+               <p class="process-card__text">
+               Verifico su più dispositivi, rifinisco i dettagli e preparo tutto per la pubblicazione (anche su GitHub Pages).
+               </p>
+          </article>
+        </div>
+      </div>
+     </section>
+
+     <section id="skills" class="skills" aria-label="Skills">
+     <div class="skills__inner">
+       <div class="skills__card">
+         <h2 class="skills__title">Skills</h2>
+           <p class="skills__text">
+           Sto costruendo solide basi nel web development, con particolare attenzione
+           alla struttura del codice, ai layout responsive e alla cura dei dettagli.
+           </p>
+
+           <div class="skills__grid">
+             <div class="skills__item">
+               <h3>HTML5</h3>
+                 <p>Struttura semantica, accessibilità e organizzazione dei contenuti.</p>
+              </div>
+
+             <div class="skills__item">
+               <h3>CSS3</h3>
+                 <p>Stili moderni, animazioni leggere e gestione delle spaziature.</p>
+               </div>
+
+             <div class="skills__item">
+                <h3>Flexbox</h3>
+                 <p>Allineamento e distribuzione degli elementi nei layout.</p>
+              </div>
+
+             <div class="skills__item">
+               <h3>CSS Grid</h3>
+                 <p>Costruzione di layout complessi e responsive (livello base).</p>
+              </div>
+
+             <div class="skills__item">
+               <h3>Git & GitHub</h3>
+                 <p>Versionamento del codice e pubblicazione dei progetti.</p>
+              </div>
+
+             <div class="skills__item">
+               <h3>Responsive Design</h3>
+                 <p>Adattamento fluido su mobile, tablet e desktop.</p>
+              </div>
+           </div>
+        </div> 
+      </div>
+     </section>
+
+     <section id="progetti" class="projects-section" aria-label="Progetti">
+     <div class="projects-section__inner">
+       <h2 class="projects-section__title">Progetti</h2>
+    
+       <p class="projects-section__subtitle">
+         Sto costruendo il mio portfolio: qui inserirò demo, repository GitHub e i case study dei miei lavori.
+       </p>
+
+       <div class="projects-grid">
+         <article class="project-card">
+           <div class="project-card__top">
+             <span class="project-card__tag">In arrivo</span>
+             <span class="project-card__num">01</span>
+           </div>
+
+           <h3 class="project-card__title">Esempio Progetto 1</h3>
+            <p class="project-card__text">
+             Layout responsive, menu sticky mobile, Open Graph e struttura multi-pagina.
+           </p>
+
+           <div class="project-card__actions">
+               <a class="project-card__btn project-card__btn--disabled" href="#" aria-disabled="true">
+               Demo
+              </a>
+               <a class="project-card__btn project-card__btn--disabled" href="#" aria-disabled="true">
+               GitHub
+              </a>
+           </div>
+         </article>
+
+         <article class="project-card">
+           <div class="project-card__top">
+             <span class="project-card__tag">In arrivo</span>
+             <span class="project-card__num">02</span>
+           </div>
+
+           <h3 class="project-card__title">Esempio Progetto 2</h3>
+           <p class="project-card__text">
+            CV in HTML con sezioni chiare, tipografia pulita e struttura semantica.
+           </p>
+
+           <div class="project-card__actions">
+               <a class="project-card__btn project-card__btn--disabled" href="#" aria-disabled="true">
+               Demo
+              </a>
+               <a class="project-card__btn project-card__btn--disabled" href="#" aria-disabled="true">
+               GitHub
+             </a>
+           </div>
+         </article>
+
+         <article class="project-card">
+           <div class="project-card__top">
+             <span class="project-card__tag">In arrivo</span>
+             <span class="project-card__num">03</span>
+            </div>
+
+            <h3 class="project-card__title">Esempio Progetto 3</h3>
+            <p class="project-card__text">
+             Form accessibile con validazione HTML e struttura chiara.
+            </p>
+
+           <div class="project-card__actions">
+             <a class="project-card__btn project-card__btn--disabled" href="#" aria-disabled="true">
+              Demo
+             </a>
+             <a class="project-card__btn project-card__btn--disabled" href="#" aria-disabled="true">
+              GitHub
+             </a>
+           </div>
+         </article>
+
+         <article class="project-card">
+           <div class="project-card__top">
+             <span class="project-card__tag">In arrivo</span>
+             <span class="project-card__num">04</span>
+           </div>
+
+           <h3 class="project-card__title">Esempio Progetto 4</h3>
+           <p class="project-card__text">
+             Pulsanti, card, hover effects e animazioni leggere per migliorare l’esperienza utente.
+            </p>
+
+           <div class="project-card__actions">
+             <a class="project-card__btn project-card__btn--disabled" href="#" aria-disabled="true">
+              Demo
+             </a>
+             <a class="project-card__btn project-card__btn--disabled" href="#" aria-disabled="true">
+              GitHub
+             </a>
+           </div>
+         </article>
+       </div>
+     </div>
+     </section>
+   </main>
+
+    <!-- FOOTER -->
+   <footer class="site-footer" aria-label="Footer">
+    <div class="site-footer__inner">
+       <div class="site-footer__card">
+         <h2 class="site-footer__title">Restiamo in contatto</h2>
+           <p class="site-footer__text">
+           Se cerchi una Junior Web Developer motivata e attenta ai dettagli,
+           scrivimi o contattami sui miei profili social.
+         </p>
+
+           <div class="contact-form__actions">
+             <a class="contact-form__btn" href="contattami.html" target="_blank" rel="noopener noreferrer">
+               Contattami
+             </a>
+           </div>
+              
+       <ul class="site-footer__social" aria-label="Social links">
+           <li>
+             <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+               <i class="fa-brands fa-github"></i>
+              </a>
+           </li>
+
+           <li>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+             </a>
+           </li>
+
+           <li>
+             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+               <i class="fa-brands fa-instagram"></i>
+              </a>
+           </li>
+         </ul>
+      <p class="site-footer__copy">
+        © 2026 Alessandra Trapasso — Junior Web Developer
+      </p>
+    </div>
+  </div>
+ </footer>
+</body>
+</html>
+
+
