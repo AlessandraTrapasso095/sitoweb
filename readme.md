@@ -4,7 +4,7 @@ Sito portfolio personale realizzato per il progetto Start2Impact.
 
 ## Tecnologie utilizzate
 - HTML5
-- CSS3 / SCSS
+- CSS3
 - Bootstrap (grid system)
 - Responsive Design
 - Git & GitHub
