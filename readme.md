@@ -16,5 +16,5 @@ Sito portfolio personale realizzato per il progetto Start2Impact.
 - CV
 - Contattami
 
-🔗 GitHub: https://alessandratrapasso095.github.io/portfolio-alessandra-trapasso/
+🔗 GitHub: https://github.com/AlessandraTrapasso095/io.git
 
